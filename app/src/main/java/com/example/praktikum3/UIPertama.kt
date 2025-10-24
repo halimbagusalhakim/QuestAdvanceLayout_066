@@ -73,7 +73,6 @@ fun ActivitasPertama(modifier: Modifier){
                 }
             }
         }
-        Spacer(modifier = Modifier.height(10.dp))
         Card(modifier = Modifier
             .fillMaxWidth(1f)
             .padding(12.dp),
@@ -113,12 +112,12 @@ fun ActivitasPertama(modifier: Modifier){
                 }
             }
         }
-        Spacer(modifier = Modifier.height(10.dp))
+
         Card(modifier = Modifier
             .fillMaxWidth(1f)
             .padding(12.dp),
             colors = CardDefaults.cardColors(
-                containerColor = Color.Green
+                containerColor = Color(0xFF006400)
             )
         ){
             Row {
