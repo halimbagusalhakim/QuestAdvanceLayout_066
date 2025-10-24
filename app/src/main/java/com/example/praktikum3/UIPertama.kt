@@ -28,7 +28,7 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun ActivitasPertama(modifier: Modifier){
-    Column(modifier = Modifier.padding(100.dp)
+    Column(modifier = Modifier.padding(top = 100.dp)
         .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
@@ -65,6 +65,46 @@ fun ActivitasPertama(modifier: Modifier){
                     )
                     Text(
                         stringResource(R.string.alamat),
+                        fontSize = 20.sp,
+                        color = Color.Yellow,
+                        modifier = Modifier.padding(top=10.dp)
+                    )
+
+                }
+            }
+        }
+        Spacer(modifier = Modifier.height(25.dp))
+        Card(modifier = Modifier
+            .fillMaxWidth(1f)
+            .padding(12.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = Color.Blue
+            )
+        ){
+            Row {
+                val gambar2 = painterResource(R.drawable.logougm)
+                Image(
+                    painter = gambar2,
+                    contentDescription = null,
+                    modifier = Modifier.size(100.dp).padding(5.dp)
+                )
+                Spacer(modifier = Modifier.width(30.dp))
+                Column(){
+                    Text(
+                        stringResource(R.string.univ2),
+                        fontSize = 30.sp,
+                        fontFamily = FontFamily.Cursive,
+                        color = Color.White,
+                        modifier = Modifier.padding(top=15.dp)
+                    )
+                    Text(
+                        stringResource(R.string.notelepon1),
+                        fontSize = 20.sp,
+                        color = Color.Yellow,
+                        modifier = Modifier.padding(top=10.dp)
+                    )
+                    Text(
+                        stringResource(R.string.alamat2),
                         fontSize = 20.sp,
                         color = Color.Yellow,
                         modifier = Modifier.padding(top=10.dp)
