@@ -106,7 +106,7 @@ fun ActivitasPertama(modifier: Modifier){
                         stringResource(R.string.alamat2),
                         fontSize = 20.sp,
                         color = Color.Yellow,
-                        modifier = Modifier.padding(top=10.dp)
+                        modifier = Modifier.padding(top=10.dp, bottom = 15.dp)
                     )
 
                 }
@@ -146,7 +146,8 @@ fun ActivitasPertama(modifier: Modifier){
                         stringResource(R.string.alamat3),
                         fontSize = 20.sp,
                         color = Color.Yellow,
-                        modifier = Modifier.padding(top=10.dp)
+                        modifier = Modifier.padding(top=10.dp, bottom = 15.dp)
+
                     )
 
                 }
