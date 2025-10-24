@@ -73,7 +73,7 @@ fun ActivitasPertama(modifier: Modifier){
                 }
             }
         }
-        Spacer(modifier = Modifier.height(25.dp))
+        Spacer(modifier = Modifier.height(10.dp))
         Card(modifier = Modifier
             .fillMaxWidth(1f)
             .padding(12.dp),
@@ -91,7 +91,7 @@ fun ActivitasPertama(modifier: Modifier){
                 Spacer(modifier = Modifier.width(30.dp))
                 Column(){
                     Text(
-                        stringResource(R.string.univ2),
+                        stringResource(R.string.nama2),
                         fontSize = 30.sp,
                         fontFamily = FontFamily.Cursive,
                         color = Color.White,
@@ -113,6 +113,47 @@ fun ActivitasPertama(modifier: Modifier){
                 }
             }
         }
+        Spacer(modifier = Modifier.height(10.dp))
+        Card(modifier = Modifier
+            .fillMaxWidth(1f)
+            .padding(12.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = Color.Green
+            )
+        ){
+            Row {
+                val gambar3 = painterResource(R.drawable.logouny)
+                Image(
+                    painter = gambar3,
+                    contentDescription = null,
+                    modifier = Modifier.size(100.dp).padding(5.dp)
+                )
+                Spacer(modifier = Modifier.width(30.dp))
+                Column(){
+                    Text(
+                        stringResource(R.string.nama3),
+                        fontSize = 30.sp,
+                        fontFamily = FontFamily.Cursive,
+                        color = Color.White,
+                        modifier = Modifier.padding(top=15.dp)
+                    )
+                    Text(
+                        stringResource(R.string.notelepon2),
+                        fontSize = 20.sp,
+                        color = Color.Yellow,
+                        modifier = Modifier.padding(top=10.dp)
+                    )
+                    Text(
+                        stringResource(R.string.alamat3),
+                        fontSize = 20.sp,
+                        color = Color.Yellow,
+                        modifier = Modifier.padding(top=10.dp)
+                    )
+
+                }
+            }
+        }
+
         Box(
             modifier = Modifier
                 .fillMaxSize()
